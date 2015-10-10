@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+
+<div class="col-xs-12 col-md-8">
+		<h2>Блог</h2>
+
+			<br><br>
+
+
+	    {{ range .Data.Pages }}
+						<h3><small>{{ .Date.Format  "2006.01.02" }} | </small>  <a href="{{.Permalink}}">{{.Title}} </a>  </h3>
+		        <p class="lead">
+		                 {{ .Content}}
+		        </p>
+						<br><br>
+        {{ end }}
+
+</div>
+
+{{ partial "sidebar.html" . }}
+{{ partial "footer.html" . }}

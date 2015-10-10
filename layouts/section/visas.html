@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+
+<div class="col-xs-12 col-md-8">
+		<h3>Мы занимаемся оформлением виз в следующие страны</h3>
+        	Если интересная вам страна не в списке, это не значит, что мы не можем помочь вам в оформлении. Позвоните нам и мы постараемся найти для вас решение.
+            <br><br>
+                {{ range .Data.Pages }}
+                <div class="col-md-3">
+                        <div class="row country">
+                                <img  class="img-rounded" width="23" src="/flags/{{.Params.flag}}.png">
+                                <a href="{{.RelPermalink}}">
+                                	{{ .Title}}
+                                </a>
+                        </div>
+                </div>
+                {{ end }}
+</div>
+
+{{ partial "sidebar.html" . }}    
+{{ partial "footer.html" . }}
