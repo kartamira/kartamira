@@ -88,3 +88,8 @@ h3 a {
 	width: 100%;
 	margin-top: 20px;
 }
+
+#agentruIframe{
+	width: 100%;
+	display: inline;
+}
