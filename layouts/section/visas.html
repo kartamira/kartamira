@@ -7,8 +7,8 @@
                 {{ range .Data.Pages }}
                 <div class="col-md-3">
                         <div class="row country">
-                                <img  class="img-rounded" width="23" src="/flags/{{.Params.flag}}.png">
-                                <a href="{{.RelPermalink}}">
+                                <img  class="img-rounded" width="23" src="/kartamira/flags/{{.Params.flag}}.png">
+                                <a href="/kartamira{{.RelPermalink}}">
                                 	{{ .Title}}
                                 </a>
                         </div>
@@ -16,5 +16,5 @@
                 {{ end }}
 </div>
 
-{{ partial "sidebar.html" . }}    
+{{ partial "sidebar.html" . }}
 {{ partial "footer.html" . }}
