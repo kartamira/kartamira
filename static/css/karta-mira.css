@@ -61,6 +61,12 @@ body{
 
 }
 
+.footer-line{
+		background-color: #666666;
+		padding-top: 10px;
+		margin-bottom: 30px;
+}
+
 
 .contentus{
 	background-color: #ffffff;
@@ -72,4 +78,8 @@ body{
   .le-sidebar{
   	display: none;
   }
+}
+
+h3 a {
+		color: #666666;
 }
