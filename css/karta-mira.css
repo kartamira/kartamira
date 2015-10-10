@@ -80,13 +80,10 @@ body{
   }
 }
 
-h1 {
+h3 a, h5 a, h1{
 		color: #666666;
 }
 
-h3 a {
-		color: #666666;
-}
 
 .landing-carousel {
 	width: 100%;
